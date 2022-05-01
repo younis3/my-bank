@@ -1,4 +1,4 @@
-## Mybank - Bank Web App built with Angular (Front End Only)
+## Mybank - Bank Web App built with Angular (Front-end Only)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
