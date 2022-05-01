@@ -1,0 +1,15 @@
+<div class="nav">
+  <h3 class="name"><span dir="ltr">{{blnce_srv.getBalance() | currency: 'ILS'}} :יתרה 
+  </span><span dir="rtl">שם: {{owner.name}} </span></h3>
+  <nav>
+    <ul>
+      <li><a (click)='logOut()'>התנתקות</a></li>
+      <li><a routerLink='/BankAccount'>הזנת תנועות</a></li>
+      <li><a routerLink='/transactions'>טבלת תנועות</a></li>
+      <li><a routerLink='/ChangeBank'>עריכת סניף הבנק</a></li>
+      <li><a routerLink='/ChangeOwnerDetails'>עריכת פרטי חשבון</a></li>
+      <li><a routerLink='/ChangePassword'>שינוי סיסמה</a></li>
+    </ul>
+  </nav>
+</div>
+<br>

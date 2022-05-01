@@ -1,0 +1,24 @@
+<div class="container">
+  <p class="notFound" *ngIf="transArr.length<1">לא נמצאו תנועות</p>
+  <div class="tbl-container" *ngIf="transArr.length>0">
+    <table class="tbl">
+      <caption>רשימת כל הפעולות</caption>
+      <tr class="header">
+        <th>יתרה בחשבון</th>
+        <th>תאריך פעולה</th>
+        <th>סוג פעולה</th>
+        <th>סכום</th>
+        <th>#</th>
+      </tr>
+      <tr *ngFor="let transaction of transArr" [class.minus2]="transaction.curBalance < 0">
+        <td>{{ transaction.curBalance | currency: "ILS" }}</td>
+        <td>{{ transaction.trnDate | date: "dd/MM/yyyy" }}</td>
+        <td>{{ transactionTypeNames[transaction.trnTyp * 1] | uppercase }}</td>
+        <td>{{ transaction.amount | currency: "ILS" }}</td>
+        <td><a (click)="setTransIndex(transArr.indexOf(transaction))">
+            {{transArr.indexOf(transaction) + 1 }}
+          </a></td>
+      </tr>
+    </table>
+  </div>
+</div>

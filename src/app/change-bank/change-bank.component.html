@@ -1,0 +1,27 @@
+<h2 style="text-align: center;">שינוי פרטי סניף בנק</h2>
+
+<div class="changeBankDetails">
+  <br>
+  <div class="labels">
+    <label>
+      <input type=text id=brName required [(ngModel)]="branchName" />
+      :שם סניף
+    </label>
+    <br><br>
+    <label>
+      <input type=number id=brNum required [(ngModel)]="branchNum" />
+      :מס סניף
+    </label>
+    <br><br>
+    <label>
+      <input type=number id=accNum required [(ngModel)]="accNum" />
+      :מס חשבון
+    </label>
+  </div>
+  <br>
+  <br>
+  <div class="btns">
+    <button (click)="cancel()">בטל</button> &nbsp;&nbsp;
+    <button (click)="save()">שמור שינויים</button>
+  </div>
+</div>

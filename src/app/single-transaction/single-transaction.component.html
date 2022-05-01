@@ -1,0 +1,37 @@
+<h2 style="text-align: center;">פרטי תנועה</h2>
+<br>
+<div class='trans'>
+  <label>
+    <input type=text id=amount disabled [value]="transaction?.amount | currency: 'ILS'" />
+    :סכום
+  </label>
+  <br><br>
+  <label>
+    <input type=text id=asmachta disabled [value]="transaction?.asmachta" />
+    :אסמכתא
+  </label>
+  <br><br>
+  <label>
+    <input type=text id=date disabled [value]="transaction?.trnDate|date: 'dd/MM/yyyy'" />
+    :תאריך
+  </label>
+  <br><br>
+  <label>
+    <input type=text id=trntype disabled [value]="transactionTypeNames[transaction?.trnTyp * 1]" />
+    :סוג פעולה
+  </label>
+  <br><br>
+  <textarea id=note disabled [value]="note" cols="50" rows="5"></textarea>
+  <label for=note>:הערה</label>
+  <br><br>
+  <label>
+    <input type=text id=blnce disabled [value]="transaction?.curBalance | currency: 'ILS'"
+      [class.minusBlnce]='transaction?.curBalance<0' />
+    :יתרה
+  </label>
+  <br><br><br>
+  <div class="btns">
+    <button (click)="delete()">מחק</button> &nbsp;&nbsp;
+    <button (click)="back()">חזרה</button> 
+  </div>
+</div>

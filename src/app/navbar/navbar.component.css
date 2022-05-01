@@ -1,0 +1,59 @@
+.nav{
+  background: rgb(133, 78, 133);
+}
+
+.name {
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 0;
+  background: rgb(133, 78, 133);
+  color: white;
+}
+
+.name span{
+  margin-right: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 600;
+  padding: 5px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0;
+  margin: 10px;
+  list-style-type: none;
+  padding: 0;
+  background: rgb(2, 0, 36);
+  background: rgb(133, 78, 133);
+}
+
+ul li {
+  border: 2px solid rgb(22, 20, 22);
+  margin-right: 6px;
+}
+
+ul li:last-child {
+  border-right: none;
+  margin-right: none;
+}
+
+ul li :hover {
+  background-color: rgb(31, 19, 19);
+  color: rgb(255, 255, 255);
+}
+
+ul li a {
+  display: block;
+  color: white;
+  background-color: rgb(133, 117, 133);
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+}

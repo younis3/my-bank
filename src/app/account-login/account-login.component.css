@@ -1,0 +1,3 @@
+div {direction: rtl;;text-align: center;}
+:invalid{background-color: red;}
+:valid{background-color: green;}

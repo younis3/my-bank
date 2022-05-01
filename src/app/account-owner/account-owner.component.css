@@ -1,0 +1,14 @@
+input:valid {
+  background: green;
+  color: rgb(22, 33, 43);
+}
+input:invalid {
+  background: red;
+  color: rgb(22, 33, 43);
+}
+
+ .prateHeshbon {
+  width: 35%;
+  margin: 0 auto;
+  text-align: center;
+}

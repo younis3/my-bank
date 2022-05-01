@@ -1,0 +1,58 @@
+h1,
+p {
+  text-align: center;
+}
+
+.minus {
+  color: red;
+}
+
+.minus2 {
+  background-color: #fc7171;
+}
+
+input,
+textarea {
+  direction: rtl;
+}
+
+.container .notFound {
+  color: rgb(0, 0, 0);
+  font-size: large;
+}
+
+.tbl {
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 3px;
+  border: solid rgb(223, 221, 221);
+}
+
+.tbl caption {
+  font-size: x-large;
+  color: hsl(320, 12%, 5%);
+  font-weight: 600;
+  padding: 10px;
+
+}
+
+.tbl .header {
+  background-color: hsl(309, 10%, 64%);
+  color: black;
+  font-size: larger;
+}
+
+.tbl .header th {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.tbl td {
+  text-align: center;
+  padding: 10px 30px;
+}
+
+.tbl tr td a {
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -1,0 +1,32 @@
+<h2 style="text-align: center;">שינוי פרטי בעל החשבון</h2>
+
+<div class="prateHeshbon">
+  <h2>{{curOwner.name}} :בעל החשבון </h2>
+
+  <img [src]="(this.curOwnerHasPic)?'assets/images/'+this.curOwnerId+'.png':'assets/images/noImage.png'" height="80" >
+
+  <div class="lables">
+    <label for=pic>יש תמונה:</label>
+    <input type=checkbox id=pic [(ngModel)]="this.curOwnerHasPic">
+    <br><br>
+    <label>
+      <input required type=text id=name required [(ngModel)]="this.curOwnerName" />
+      :שם לקוח
+    </label>
+    <br><br>
+    <label>
+      <input required type=text id=address required [(ngModel)]="this.curOwnerAdrs" />
+      :כתובת
+    </label>
+    <br><br>
+    <label>
+      <input type=text id=tz disabled [value]="this.curOwnerId" />
+      :.ת.ז
+    </label>
+  </div>
+  <br><br>
+  <div class="btns">
+    <button (click)="cancel()">בטל</button> &nbsp;&nbsp;
+    <button (click)="save()">שמור שינויים</button>
+  </div>
+</div>

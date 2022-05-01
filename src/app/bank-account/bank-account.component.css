@@ -1,0 +1,7 @@
+h1,p{text-align: center;}
+h1 {color:blue;}
+.minus{color:red}
+input,textarea {direction: rtl;}
+#owner,#transaction {margin:0 auto;width:1200px;text-align:center}
+:invalid{background-color: red;}
+.notshown{display:none}
